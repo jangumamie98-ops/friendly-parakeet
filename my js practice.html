@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js practice</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <form action="">
+    
+    <div class="form-items">
+        <h1>Login </h1>
+    <input type="text" placeholder="enter name"  id="name" required>
+    <input type="text" placeholder="enter surname" id="surname" required>
+    <input type="password" placeholder="password" id="password" required>
+    <button>Login </button>
+    </div>
+    
+   </form> 
+
+   <script src="html.js"></script>
+    <!-- <script>
+         const form = document.getElementById("loginForm");
+  const message = document.getElementById("message");
+
+  form.addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const name = document.getElementById("name").value.trim();
+    const surname = document.getElementById("surname").value.trim();
+    const password = document.getElementById("password").value.trim();
+
+    if(name === "" || surname === "" || password === ""){
+      message.style.color = "red";
+      message.textContent = "Please fill all fields!";
+      return;
+    }
+
+    // This is REAL JavaScript that runs your form
+    message.style.color = "green";
+    message.innerHTML = `
+      Login Successful! <br><br>
+      <b>Name:</b> ${name} <br>
+      <b>Surname:</b> ${surname} <br>
+      <b>Password:</b> ${password} <br><br>
+      Welcome ${name}!
+    `;
+
+    // Save in browser memory (so it doesn't disappear immediately)
+    localStorage.setItem("lastUser", JSON.stringify({name, surname}));
+
+    form.reset();
+  });
+</script> -->
+
+ 
+
+</body>
+</html>
